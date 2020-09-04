@@ -1,0 +1,110 @@
+$highlightColor: #49a6e9;
+$defBGColor: #4a505d;
+$elemBGColor: #222222;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: relative;
+  display: grid;
+  background: white;
+  padding: 20px;
+}
+
+.nav-ele {
+  display: inline-block;
+  color: $elemBGColor;
+  font-family: Lato;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 5px;
+  padding-top: 10px;
+}
+
+#web-title {
+  position: absolute;
+  left: 60px;
+  color: $highlightColor;
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+#simple-mode {
+  position: absolute;
+  text-decoration: none;
+  right: 120px;
+}
+#rand-mode {
+  position: absolute;
+  text-decoration: none;
+  right: 75px;
+}
+
+#simple-mode:hover,
+#simple-mode:active,
+#rand-mode:hover,
+#rand-mode:active {
+  color: $highlightColor;
+}
+
+body {
+  background-color: $defBGColor;
+}
+
+.color-disp {
+  position: absolute;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $elemBGColor;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: Lato;
+}
+
+#color {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: $highlightColor;
+  cursor: pointer;
+
+  #color:active {
+    color: $highlightColor;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+}
+
+#color-changer {
+  position: absolute;
+  display: inline-block;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid $elemBGColor;
+  outline: none;
+  background-color: #ffffff00;
+  font-family: Lato;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  #color-changer:hover {
+    background-color: #222;
+    color: white;
+    transition: all 0.5s;
+  }
+  #color-changer:active {
+    background-color: black;
+    transition: background-color 0.3s;
+  }
+}
