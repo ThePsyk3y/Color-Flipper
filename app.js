@@ -18,6 +18,7 @@ function getRandomNumber() {
   return currRand;
 }
 
+// *Button EventListener
 btn.addEventListener('click', () => {
   const randNum = getRandomNumber();
   document.body.style.backgroundColor = colors[randNum];
